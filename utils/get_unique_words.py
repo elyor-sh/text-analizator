@@ -1,5 +1,6 @@
+from typing import Dict, List
 
-def get_unique_words(wordsMap):
+def get_unique_words(wordsMap: Dict[str, int]) -> List[str]:
 
     words = []
 

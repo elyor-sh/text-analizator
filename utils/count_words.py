@@ -1,5 +1,6 @@
+from typing import Dict
 
-def count_words(text):
+def count_words(text: str) -> Dict[str, int]:
     words = text.split()
     wordsCount = {}
 

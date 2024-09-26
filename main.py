@@ -6,10 +6,17 @@ from utils.ban_words import check_ban_words
 from utils.get_unique_words import get_unique_words
 from utils.write_unique_words import write_unique_words
 from models.get_interesting_words import get_interesting_words
+from utils.set_color import set_color
+
+set_color("CYAN")
+
 
 if __name__ == "__main__":
     try:
-        text = read_file("test.txt")
+
+        path = input("Пожалуйста введите путь к текстовому файлу: ")
+
+        text = read_file(path)
 
         if(check_ban_words(text)):
             print("В тексте содержится запрещенное слово")
@@ -28,7 +35,7 @@ if __name__ == "__main__":
 
         write_unique_words(unique_words, "uniqueWords.txt")
 
-
+        set_color("MAGENTA")
         print("Успешно посчитали...")
 
     except Exception as e:
