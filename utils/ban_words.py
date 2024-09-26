@@ -1,5 +1,5 @@
 
-ban_words = {'lorem', 'ipsum', 'dolor', 'adipisicing'}
+ban_words = {}
 
 def check_ban_words(text):
     for word in text.split():
