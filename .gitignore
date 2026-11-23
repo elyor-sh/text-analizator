@@ -1,2 +1,7 @@
 /utils/__pycache__
 /models/__pycache__
+
+# env files
+.env
+.env.*
+!.env.example
